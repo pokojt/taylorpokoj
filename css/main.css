@@ -52,6 +52,16 @@ a {
     letter-spacing: 3px;
     margin: 300px 10px 0px 0px;
     font-family: 'cinzel'; }
+  .spaceOne .navigation {
+    position: relative;
+    top: 30%;
+    right: 10%; }
+    .spaceOne .navigation .links {
+      display: inline;
+      margin: 10px;
+      color: #F5F5F5; }
+      .spaceOne .navigation .links:hover {
+        cursor: pointer; }
 
 .spaceTwo {
   height: 100vh;
@@ -78,6 +88,18 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover; }
+
+.clicked {
+  width: 70% !important;
+  transition: all 1s ease-in-out; }
+
+.notClicked {
+  width: 15% !important;
+  transition: all 1s ease-in-out; }
+  .notClicked h1 {
+    color: transparent; }
+  .notClicked p {
+    color: transparent; }
 
 .logo {
   position: absolute;
