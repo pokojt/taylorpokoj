@@ -9,18 +9,29 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+
+@font-face {
+  font-family: 'cinzel';
+  // src: url('#{$path-font}Raleway/Raleway-Regular.ttf');
+  // src: url('#{$path-font}Poiret_One/PoiretOne-Regular.ttf');
+  // src: url('#{$path-font}Josefin_Sans/JosefinSans-Regular.ttf');
+  // src: url('#{$path-font}afta-serif/AftaSerifThin-Regular.ttf');
+  src: url('#{$path-font}cinzel/Cinzel-Regular.otf');
+}
+
+@font-face {
+  font-family: 'josefin';
+  src: url('#{$path-font}Josefin_Sans/JosefinSans-Regular.ttf');
+}
+
 html, body {
   padding: 0px;
   margin: 0px;
+  font-family: 'josefin';
 }
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-body {
-  // background: url('#{$path-img}clouds.jpg') no-repeat fixed;
-  // background-position: bottom;
 }
 
 
@@ -29,30 +40,4 @@ body {
  */
 a {
   text-decoration: none;
-}
-
-
-.backgroundWrapper {
-  display: flex;
-}
-.spaceOne {
-  background: url('#{$path-img}clouds.jpg') no-repeat center center fixed;
-  background-position: bottom;
-  height: 100vh;
-  width: 55%;
-}
-.spaceTwo {
-  height: 100vh;
-  width: 25%;
-  background-color: $cream;
-}
-
-.spaceThree {
-  height: 100vh;
-  width: 20%;
-  background-image: linear-gradient(rgba(#A19A94, 0.2),
-    rgba(#A19A94, 0.2)),url("#{$path-img}/taylorlowsat.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
 }

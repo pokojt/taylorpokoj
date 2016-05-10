@@ -1,0 +1,44 @@
+.backgroundWrapper {
+  display: flex;
+}
+
+.spaceOne {
+  background: url('#{$path-img}clouds.jpg') no-repeat center center fixed;
+  background-position: bottom;
+  height: 100vh;
+  width: 55%;
+  text-align: right;
+  @include flexbox($direction: column);
+  h1 {
+    @include textFormat(70px, white, lighter, 3px);
+    margin: 300px 10px 0px 0px;
+    font-family: 'cinzel';
+  }
+}
+.spaceTwo {
+  height: 100vh;
+  width: 25%;
+  background-color: $cream;
+  @include flexbox($direction: column);
+  h1 {
+    @include textFormat(60px, black, lighter, 3px);
+    margin: 310px 0px 0px 5px;
+    font-family: 'cinzel'
+  }
+  p {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+
+.spaceThree {
+  height: 100vh;
+  width: 20%;
+  // background-image: linear-gradient(rgba(#121E25, 0.4),
+  //   rgba(#121E25, 0.4)),url("#{$path-img}/taylorlowsat.jpg");
+  background-image: linear-gradient(rgba($cream, 0.7),
+    rgba($cream, 0.7)),url("#{$path-img}/taylorlowsat.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
