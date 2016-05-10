@@ -18,10 +18,6 @@ html, body {
 body::-webkit-scrollbar {
   display: none; }
 
-body {
-  background: url("../img/background.jpg") no-repeat fixed;
-  background-position: bottom; }
-
 /**
  * Basic styles for links
  */
@@ -32,6 +28,8 @@ a {
   display: flex; }
 
 .spaceOne {
+  background: url("../img/clouds.jpg") no-repeat center center fixed;
+  background-position: bottom;
   height: 100vh;
   width: 55%; }
 
@@ -44,7 +42,9 @@ a {
   height: 100vh;
   width: 20%;
   background-image: linear-gradient(rgba(161, 154, 148, 0.2), rgba(161, 154, 148, 0.2)), url("../img//taylorlowsat.jpg");
-  background-position: right; }
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; }
 
 /**
  * Basic typography style for copy text

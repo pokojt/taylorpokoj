@@ -19,8 +19,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background: url('#{$path-img}background.jpg') no-repeat fixed;
-  background-position: bottom;
+  // background: url('#{$path-img}clouds.jpg') no-repeat fixed;
+  // background-position: bottom;
 }
 
 
@@ -36,6 +36,8 @@ a {
   display: flex;
 }
 .spaceOne {
+  background: url('#{$path-img}clouds.jpg') no-repeat center center fixed;
+  background-position: bottom;
   height: 100vh;
   width: 55%;
 }
@@ -50,5 +52,7 @@ a {
   width: 20%;
   background-image: linear-gradient(rgba(#A19A94, 0.2),
     rgba(#A19A94, 0.2)),url("#{$path-img}/taylorlowsat.jpg");
+  background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
 }
