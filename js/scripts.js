@@ -3,24 +3,31 @@ $(document).ready(function() {
     $(".spaceOne").removeClass("clicked");
     $(".spaceThree").removeClass("clicked");
     $(".spaceTwo").removeClass("notClicked");
-    $(".spaceTwo").toggleClass("clicked");
-    $(".spaceOne").toggleClass("notClicked");
-    $(".spaceThree").toggleClass("notClicked");
+    $(".spaceTwo").addClass("clicked");
+    $(".spaceOne").addClass("notClicked");
+    $(".spaceThree").addClass("notClicked");
+    $(".logo").addClass("logoMoved");
   });
   $('#about').click(function() {
     $(".spaceOne").removeClass("clicked");
     $(".spaceTwo").removeClass("clicked");
     $(".spaceThree").removeClass("notClicked");
-    $(".spaceThree").toggleClass("clicked");
-    $(".spaceOne").toggleClass("notClicked");
-    $(".spaceTwo").toggleClass("notClicked");
+    $(".spaceThree").addClass("clicked");
+    $(".spaceOne").addClass("notClicked");
+    $(".spaceTwo").addClass("notClicked");
+    $(".logo").addClass("logoMoved");
   });
   $('#contact').click(function() {
     $(".spaceThree").removeClass("clicked");
     $(".spaceTwo").removeClass("clicked");
     $(".spaceOne").removeClass("notClicked");
-    $(".spaceOne").toggleClass("clicked");
-    $(".spaceThree").toggleClass("notClicked");
-    $(".spaceTwo").toggleClass("notClicked");
+    $(".spaceOne").addClass("clicked");
+    $(".spaceThree").addClass("notClicked");
+    $(".spaceTwo").addClass("notClicked");
+    $(".logo").addClass("logoMoved");
   });
+
+  $('.logo').click(function() {
+    location.reload();
+  })
 })

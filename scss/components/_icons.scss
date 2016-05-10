@@ -3,4 +3,12 @@
   top: 170px;
   left: 40%;
   height: 125px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.logoMoved {
+  left: 3% !important;
+  transition: all 1s ease-in-out;
 }

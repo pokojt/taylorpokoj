@@ -106,5 +106,11 @@ a {
   top: 170px;
   left: 40%;
   height: 125px; }
+  .logo:hover {
+    cursor: pointer; }
+
+.logoMoved {
+  left: 3% !important;
+  transition: all 1s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
