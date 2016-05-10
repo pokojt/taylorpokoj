@@ -28,6 +28,9 @@ $(document).ready(function() {
   });
 
   $('.logo').click(function() {
-    location.reload();
+    $(".spaceThree").removeClass("clicked").removeClass("notClicked");
+    $(".spaceTwo").removeClass("clicked").removeClass("notClicked");
+    $(".spaceOne").removeClass("notClicked").removeClass("notClicked");
+    $(".logo").removeClass("logoMoved");
   })
 })
