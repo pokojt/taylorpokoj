@@ -14,10 +14,41 @@ html, body {
   margin: 0px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: url('#{$path-img}background.jpg') no-repeat fixed;
+  background-position: bottom;
+}
+
 
 /**
  * Basic styles for links
  */
 a {
   text-decoration: none;
+}
+
+
+.backgroundWrapper {
+  display: flex;
+}
+.spaceOne {
+  height: 100vh;
+  width: 55%;
+}
+.spaceTwo {
+  height: 100vh;
+  width: 25%;
+  background-color: $cream;
+}
+
+.spaceThree {
+  height: 100vh;
+  width: 20%;
+  background-image: linear-gradient(rgba($cream, 0.25),
+    rgba($cream, 0.25)),url("#{$path-img}/taylor.jpg");
+  background-position: right;
 }
