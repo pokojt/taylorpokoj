@@ -10,7 +10,7 @@
   text-align: right;
   @include flexbox($direction: column);
   h1 {
-    @include textFormat(70px, white, lighter, 3px);
+    @include textFormat(70px, $cream, lighter, 3px);
     margin: 300px 10px 0px 0px;
     font-family: 'cinzel';
   }
@@ -21,12 +21,13 @@
   background-color: $cream;
   @include flexbox($direction: column);
   h1 {
-    @include textFormat(60px, black, lighter, 3px);
+    @include textFormat(60px, $black, lighter, 3px);
     margin: 310px 0px 0px 5px;
     font-family: 'cinzel'
   }
   p {
     width: 90%;
+    @include textFormat($l-height: 19px);
     margin-left: 10px;
   }
 }
