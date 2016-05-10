@@ -25,6 +25,9 @@ html, body {
 body::-webkit-scrollbar {
   display: none; }
 
+div::-webkit-scrollbar {
+  display: none; }
+
 /**
  * Basic styles for links
  */
@@ -60,14 +63,19 @@ a {
     .spaceOne .navigation .links {
       display: inline;
       margin: 10px;
-      color: #F5F5F5; }
+      color: #F5F5F5;
+      transition: all 300ms ease-in-out; }
       .spaceOne .navigation .links:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        border-bottom: 1px solid #F5F5F5;
+        transition: all 1s linear; }
 
 .spaceTwo {
   height: 100vh;
   width: 25%;
-  background-color: #F5F5F5;
+  overflow: scroll;
+  background: #F5F5F5;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   transition: all 1s ease-in-out; }
@@ -82,6 +90,8 @@ a {
     width: 90%;
     line-height: 19px;
     margin-left: 10px; }
+  .spaceTwo .projects h1 {
+    margin-top: 0; }
 
 .spaceThree {
   height: 100vh;
@@ -103,6 +113,9 @@ a {
     color: transparent; }
   .notClicked p {
     color: transparent; }
+
+.hidden {
+  display: none; }
 
 .logo {
   position: absolute;

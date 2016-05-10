@@ -7,6 +7,7 @@ $(document).ready(function() {
     $(".spaceOne").addClass("notClicked");
     $(".spaceThree").addClass("notClicked");
     $(".logo").addClass("logoMoved");
+    $(".projects").removeClass("hidden");
   });
   $('#about').click(function() {
     $(".spaceOne").removeClass("clicked");
@@ -16,6 +17,7 @@ $(document).ready(function() {
     $(".spaceOne").addClass("notClicked");
     $(".spaceTwo").addClass("notClicked");
     $(".logo").addClass("logoMoved");
+    $(".projects").addClass("hidden");
   });
   $('#contact').click(function() {
     $(".spaceThree").removeClass("clicked");
@@ -25,6 +27,7 @@ $(document).ready(function() {
     $(".spaceThree").addClass("notClicked");
     $(".spaceTwo").addClass("notClicked");
     $(".logo").addClass("logoMoved");
+    $(".projects").addClass("hidden");
   });
 
   $('.logo').click(function() {
@@ -32,5 +35,6 @@ $(document).ready(function() {
     $(".spaceTwo").removeClass("clicked").removeClass("notClicked");
     $(".spaceOne").removeClass("notClicked").removeClass("notClicked");
     $(".logo").removeClass("logoMoved");
+    $(".projects").addClass("hidden");
   })
 })
