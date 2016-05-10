@@ -43,7 +43,7 @@ a {
 .spaceThree {
   height: 100vh;
   width: 20%;
-  background-image: linear-gradient(rgba(245, 245, 245, 0.25), rgba(245, 245, 245, 0.25)), url("../img//taylor.jpg");
+  background-image: linear-gradient(rgba(161, 154, 148, 0.2), rgba(161, 154, 148, 0.2)), url("../img//taylorlowsat.jpg");
   background-position: right; }
 
 /**
