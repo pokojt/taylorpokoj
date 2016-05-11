@@ -20,6 +20,8 @@ $(document).ready(function() {
     $(".logo").addClass("logoMoved");
     $(".projects").addClass("hidden");
     $(".logo").removeClass("logoMoved2");
+    // $(".aboutTaylor").removeClass("hidden");
+
   });
   $('#contact').click(function() {
     $(".spaceThree").removeClass("clicked");
