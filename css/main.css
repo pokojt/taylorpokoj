@@ -126,11 +126,18 @@ a {
     .spaceTwo .projectItem .projectMedia {
       padding-left: 20px; }
       .spaceTwo .projectItem .projectMedia .projectImage {
-        margin-right: 10%;
-        background-image: url("../img//songlabRedesign.png");
+        margin-right: 20%;
         background-size: cover;
         height: 300px;
         width: 400px; }
+      .spaceTwo .projectItem .projectMedia #image1 {
+        background-image: url("../img//songlabRedesign.png"); }
+      .spaceTwo .projectItem .projectMedia #image2 {
+        background: red; }
+      .spaceTwo .projectItem .projectMedia #image3 {
+        background: blue; }
+      .spaceTwo .projectItem .projectMedia #image4 {
+        background: green; }
 
 .spaceThree {
   height: 100vh;
@@ -228,13 +235,13 @@ a {
     height: 60px;
     margin-right: 10px; }
 
-.scroll, .scroll2 {
+.scroll, .scroll2, .scroll3 {
   position: relative;
   top: 15vh;
   left: 60%;
   height: 40px;
   opacity: .5; }
-  .scroll:hover, .scroll2:hover {
+  .scroll:hover, .scroll2:hover, .scroll3:hover {
     cursor: pointer; }
 
 .contacticon {

@@ -93,11 +93,22 @@
     .projectMedia {
       padding-left: 20px;
       .projectImage {
-        margin-right: 10%;
-        background-image: url("#{$path-img}/songlabRedesign.png");
+        margin-right: 20%;
         background-size: cover;
         height: 300px;
         width: 400px;
+      }
+      #image1 {
+        background-image: url("#{$path-img}/songlabRedesign.png");
+      }
+      #image2 {
+        background: red;
+      }
+      #image3 {
+        background: blue;
+      }
+      #image4 {
+        background: green;
       }
     }
   }

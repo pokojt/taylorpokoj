@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
   $('#work').click(function() {
     $(".spaceOne").removeClass("clicked");
@@ -55,7 +58,7 @@ $(document).ready(function() {
 
   $('.scroll').click(function() {
     $('.spaceTwo').animate({
-      scrollTop: $("#project2").offset().top
+      scrollTop: $("#project2").offset().top -100
     }, 1500);
   });
   $('.scroll2').click(function() {
@@ -63,4 +66,24 @@ $(document).ready(function() {
       scrollTop: $("#project3").offset().top +800
     }, 1500);
   });
+
+var project1click = 0;
+
+  $('#plus1').click(function() {
+    project1click += 1;
+    // console.log(project1click);
+
+    if (project1click === 1) {
+      $("#image1").hide();
+      $("#image2").show();
+    } else if (project1click ===2) {
+      $("#image2").hide();
+      $("#image3").show();
+    } else {
+      $("#image3").hide();
+      $("#image4").show();
+    }
+  })
+
+
 })
