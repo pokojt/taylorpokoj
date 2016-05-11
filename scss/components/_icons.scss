@@ -18,9 +18,13 @@
   left: 17% !important;
   height: 50vh;
   transition: all 1s ease-in-out;
-  // opacity: .7;
+  opacity: .7;
+  z-index: 0;
 }
 
 .plusIcon {
-  height: 70px;
+  height: 60px;
+  position: relative;
+  left: 70%;
+  top: -20px;
 }

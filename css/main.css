@@ -32,7 +32,8 @@ div::-webkit-scrollbar {
  * Basic styles for links
  */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #87CBAC; }
 
 /**
  * Basic typography style for copy text
@@ -93,8 +94,30 @@ a {
     width: 90%;
     line-height: 19px;
     margin-left: 10px; }
-  .spaceTwo .projects h1 {
-    margin-top: 0; }
+  .spaceTwo .projects {
+    margin-bottom: 11%; }
+    .spaceTwo .projects h1 {
+      margin-top: 0; }
+  .spaceTwo .projectItem {
+    z-index: 3;
+    margin-top: 200px;
+    padding-right: 20px;
+    display: flex; }
+    .spaceTwo .projectItem .projectNumbers {
+      width: 60vw;
+      text-align: right; }
+      .spaceTwo .projectItem .projectNumbers h1 {
+        font-size: 70px; }
+    .spaceTwo .projectItem .projectDescription h1 {
+      margin-top: 100px;
+      color: #87CBAC; }
+    .spaceTwo .projectItem .projectMedia {
+      padding-left: 20px; }
+      .spaceTwo .projectItem .projectMedia .projectImage {
+        margin-right: 10%;
+        background: gray;
+        height: 300px;
+        width: 400px; }
 
 .spaceThree {
   height: 100vh;
@@ -129,7 +152,12 @@ a {
   height: 100px;
   width: 100px;
   border: 1px solid #87CBAC;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 300ms ease-in-out; }
+  .viewCaseStudy:hover {
+    height: 120px;
+    width: 120px;
+    transition: all 300ms ease-in-out; }
 
 .logo {
   position: absolute;
@@ -147,9 +175,14 @@ a {
 .logoMoved2 {
   left: 17% !important;
   height: 50vh;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  opacity: .7;
+  z-index: 0; }
 
 .plusIcon {
-  height: 70px; }
+  height: 60px;
+  position: relative;
+  left: 70%;
+  top: -20px; }
 
 /*# sourceMappingURL=main.css.map */
