@@ -9,6 +9,7 @@ $(document).ready(function() {
     $(".logo").addClass("logoMoved2");
     $(".projects").removeClass("hidden");
     $(".aboutTaylor").addClass("hidden");
+    $(".contactInfo").addClass("hidden");
     $(".twoHeader").hide();
   });
   $('#about').click(function() {
@@ -22,6 +23,7 @@ $(document).ready(function() {
     $(".projects").addClass("hidden");
     $(".logo").removeClass("logoMoved2");
     $(".aboutTaylor").removeClass("hidden");
+    $(".contactInfo").addClass("hidden");
 
   });
   $('#contact').click(function() {
@@ -29,12 +31,14 @@ $(document).ready(function() {
     $(".spaceTwo").removeClass("clicked");
     $(".spaceOne").removeClass("notClicked");
     $(".spaceOne").addClass("clicked");
+    $(".contactInfo").removeClass("hidden");
     $(".spaceThree").addClass("notClicked");
     $(".spaceTwo").addClass("notClicked");
     $(".logo").addClass("logoMoved");
     $(".projects").addClass("hidden");
     $(".logo").removeClass("logoMoved2");
     $(".aboutTaylor").addClass("hidden");
+
   });
 
   $('.logo').click(function() {
@@ -45,12 +49,18 @@ $(document).ready(function() {
     $(".logo").removeClass("logoMoved2");
     $(".projects").addClass("hidden");
     $(".aboutTaylor").addClass("hidden");
+    $(".contactInfo").addClass("hidden");
     $(".twoHeader").show();
   });
 
   $('.scroll').click(function() {
     $('.spaceTwo').animate({
       scrollTop: $("#project2").offset().top
+    }, 1500);
+  });
+  $('.scroll2').click(function() {
+    $('.spaceTwo').animate({
+      scrollTop: $("#project3").offset().top
     }, 1500);
   });
 })

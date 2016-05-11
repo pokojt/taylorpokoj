@@ -33,7 +33,15 @@
   top: -20px;
 }
 
-.scroll {
+.socialIcons {
+  margin-top: 3%;
+  .socialicon {
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+
+.scroll, .scroll2 {
   position: relative;
   top: 15vh;
   left: 60%;
@@ -42,4 +50,10 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.contacticon {
+  height: 40px;
+  margin-right: 10px;
+  opacity: .7;
 }

@@ -9,19 +9,25 @@
   width: 55%;
   text-align: right;
   transition: all 1s ease-in-out;
+  overflow: scroll;
   @include flexbox($direction: column);
   h1 {
     @include textFormat(70px, $cream, lighter, 3px);
     margin: 300px 10px 0px 0px;
     font-family: 'cinzel';
   }
+  .contactInfo {
+    color: $cream;
+    padding-right: 20px;
+  }
   .navigation {
     position: relative;
-    top: 30%;
-    right: 10%;
+    bottom: -30%;
+    // left: 20%;
 
     .links {
       display: inline;
+      font-size: 18px;
       margin: 10px;
       color: $cream;
       transition: all 300ms ease-in-out;
@@ -101,14 +107,21 @@
   height: 100vh;
   width: 20%;
   transition: all 1s ease-in-out;
-  background-image: linear-gradient(rgba($cream, 0.7),
+  background-image: linear-gradient(rgba($cream, 0.70),
     rgba($cream, 0.7)),url("#{$path-img}/taylorlowsat.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  overflow: scroll;
   .aboutTaylor {
-    width: 50%;
-    margin: 100px 0 0 40px;
+    width: 52%;
+    margin: 50vh 0 0 40px;
+    h3 {
+      @include textFormat(20px);
+    }
+    p {
+      @include textFormat(17px, $l-height: 17px);
+    }
   }
 }
 
