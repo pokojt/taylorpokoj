@@ -8,6 +8,7 @@ $(document).ready(function() {
     $(".spaceThree").addClass("notClicked");
     $(".logo").addClass("logoMoved2");
     $(".projects").removeClass("hidden");
+    $(".twoHeader").hide();
   });
   $('#about').click(function() {
     $(".spaceOne").removeClass("clicked");
@@ -39,5 +40,6 @@ $(document).ready(function() {
     $(".logo").removeClass("logoMoved");
     $(".logo").removeClass("logoMoved2");
     $(".projects").addClass("hidden");
+    $(".twoHeader").show();
   })
 })
