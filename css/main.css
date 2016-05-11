@@ -86,7 +86,7 @@ a {
   transition: all 1s ease-in-out; }
   .spaceTwo h1 {
     font-size: 60px;
-    color: black;
+    color: #4A4A4A;
     font-weight: lighter;
     letter-spacing: 3px;
     margin: 310px 0px 0px 5px;
@@ -111,7 +111,7 @@ a {
         font-size: 70px; }
     .spaceTwo .projectItem .projectDescription h1 {
       margin-top: 100px;
-      color: #87CBAC; }
+      color: #8C7036; }
     .spaceTwo .projectItem .projectMedia {
       padding-left: 20px; }
       .spaceTwo .projectItem .projectMedia .projectImage {
@@ -193,8 +193,8 @@ a {
   position: relative;
   top: 15vh;
   left: 60%;
-  height: 60px;
-  opacity: .7; }
+  height: 40px;
+  opacity: .5; }
   .scroll:hover {
     cursor: pointer; }
 
