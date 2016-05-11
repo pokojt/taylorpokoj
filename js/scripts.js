@@ -8,6 +8,7 @@ $(document).ready(function() {
     $(".spaceThree").addClass("notClicked");
     $(".logo").addClass("logoMoved2");
     $(".projects").removeClass("hidden");
+    $(".aboutTaylor").addClass("hidden");
     $(".twoHeader").hide();
   });
   $('#about').click(function() {
@@ -20,7 +21,7 @@ $(document).ready(function() {
     $(".logo").addClass("logoMoved");
     $(".projects").addClass("hidden");
     $(".logo").removeClass("logoMoved2");
-    // $(".aboutTaylor").removeClass("hidden");
+    $(".aboutTaylor").removeClass("hidden");
 
   });
   $('#contact').click(function() {
@@ -33,6 +34,7 @@ $(document).ready(function() {
     $(".logo").addClass("logoMoved");
     $(".projects").addClass("hidden");
     $(".logo").removeClass("logoMoved2");
+    $(".aboutTaylor").addClass("hidden");
   });
 
   $('.logo').click(function() {
@@ -42,6 +44,7 @@ $(document).ready(function() {
     $(".logo").removeClass("logoMoved");
     $(".logo").removeClass("logoMoved2");
     $(".projects").addClass("hidden");
+    $(".aboutTaylor").addClass("hidden");
     $(".twoHeader").show();
   });
 

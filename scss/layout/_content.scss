@@ -66,13 +66,13 @@
     margin-bottom: 11%;
   }
   .projectItem {
-    // height: 65vh;
+    height: 70vh;
     z-index: 3;
     margin-top: 200px;
     padding-right: 20px;
     @include flexbox();
     .projectNumbers {
-      width: 60vw;
+      width: 40vw;
       text-align: right;
       h1 {
         font-size: 70px;
@@ -106,6 +106,10 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  .aboutTaylor {
+    width: 50%;
+    margin: 100px 0 0 40px;
+  }
 }
 
 .clicked{

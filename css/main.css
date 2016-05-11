@@ -106,12 +106,13 @@ a {
     .spaceTwo .projects h1 {
       margin-top: 0; }
   .spaceTwo .projectItem {
+    height: 70vh;
     z-index: 3;
     margin-top: 200px;
     padding-right: 20px;
     display: flex; }
     .spaceTwo .projectItem .projectNumbers {
-      width: 60vw;
+      width: 40vw;
       text-align: right; }
       .spaceTwo .projectItem .projectNumbers h1 {
         font-size: 70px; }
@@ -135,6 +136,9 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover; }
+  .spaceThree .aboutTaylor {
+    width: 50%;
+    margin: 100px 0 0 40px; }
 
 .clicked {
   width: 70% !important;
@@ -194,9 +198,9 @@ a {
 
 .logoMoved2 {
   left: 17% !important;
-  height: 50vh;
+  height: 56vh;
   transition: all 1s ease-in-out;
-  opacity: .6;
+  opacity: .5;
   z-index: 0; }
 
 .logonav {
