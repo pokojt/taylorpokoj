@@ -120,6 +120,17 @@ a {
 .hidden {
   display: none; }
 
+.viewCaseStudy {
+  color: #87CBAC;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #87CBAC;
+  border-radius: 50%; }
+
 .logo {
   position: absolute;
   top: 170px;
@@ -137,5 +148,8 @@ a {
   left: 17% !important;
   height: 50vh;
   transition: all 1s ease-in-out; }
+
+.plusIcon {
+  height: 70px; }
 
 /*# sourceMappingURL=main.css.map */
