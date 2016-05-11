@@ -70,19 +70,65 @@ $(document).ready(function() {
 var project1click = 0;
 
   $('#plus1').click(function() {
-    project1click += 1;
-    // console.log(project1click);
+    if (project1click < 3) {
+      project1click +=1;
+    }
+    console.log(project1click);
 
+    if (project1click === 1) {
+      $("#back1").show();
+      $("#image1").hide();
+      $("#image2").show();
+      $("#image3").hide();
+      $("#image4").hide();
+    } else if (project1click ===2) {
+      $("#image1").hide();
+      $("#image2").hide();
+      $("#image3").show();
+      $("#image4").hide();
+    } else if (project1click ===3){
+      $("#image1").hide();
+      $("#image2").hide();
+      $("#image3").hide();
+      $("#image4").show();
+    } else {
+        $("#image1").show();
+        $("#image2").hide();
+        $("#image3").hide();
+        $("#image4").hide();
+        $("#back1").hide();
+    }
+
+  });
+
+  $('#back1').click(function() {
+    if (project1click > 0) {
+      project1click -=1;
+    }
+    console.log(project1click);
     if (project1click === 1) {
       $("#image1").hide();
       $("#image2").show();
+      $("#image3").hide();
+      $("#image4").hide();
     } else if (project1click ===2) {
+      $("#image1").hide();
       $("#image2").hide();
       $("#image3").show();
-    } else {
+      $("#image4").hide();
+    } else if (project1click ===3){
+      $("#image1").hide();
+      $("#image2").hide();
       $("#image3").hide();
       $("#image4").show();
+    } else {
+        $("#image1").show();
+        $("#image2").hide();
+        $("#image3").hide();
+        $("#image4").hide();
+        $("#back1").hide();
     }
+
   })
 
 
