@@ -4,12 +4,13 @@
 
 
 .viewCaseStudy {
-  color: $green;
+  color: $gold;
   text-align: center;
   @include flexbox($justify: center, $align: center);
   height: 100px;
   width: 100px;
-  border: 1px solid $green;
+  padding-top: 10px;
+  border: 1px solid $gold;
   border-radius: 50%;
   transition: all 300ms ease-in-out;
   &:hover {

@@ -33,7 +33,7 @@ div::-webkit-scrollbar {
  */
 a {
   text-decoration: none;
-  color: #87CBAC;
+  color: #8C7036;
   transition: all 300ms ease-in-out; }
 
 /**
@@ -144,15 +144,24 @@ a {
 .hidden {
   display: none; }
 
+/* ----------------------- Styles for Case Study -------*/
+.caseStudyWrapper {
+  width: 80%;
+  margin: 0 auto; }
+  .caseStudyWrapper h1 {
+    font-family: 'cinzel';
+    color: #8C7036; }
+
 .viewCaseStudy {
-  color: #87CBAC;
+  color: #8C7036;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 100px;
-  border: 1px solid #87CBAC;
+  padding-top: 10px;
+  border: 1px solid #8C7036;
   border-radius: 50%;
   transition: all 300ms ease-in-out; }
   .viewCaseStudy:hover {
@@ -182,6 +191,9 @@ a {
   transition: all 1s ease-in-out;
   opacity: .6;
   z-index: 0; }
+
+.logonav {
+  height: 60px; }
 
 .plusIcon {
   height: 60px;
