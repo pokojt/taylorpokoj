@@ -41,5 +41,11 @@ $(document).ready(function() {
     $(".logo").removeClass("logoMoved2");
     $(".projects").addClass("hidden");
     $(".twoHeader").show();
-  })
+  });
+
+  $('.scroll').click(function() {
+    $('.spaceTwo').animate({
+      scrollTop: $("#project2").offset().top
+    }, 1500);
+  });
 })

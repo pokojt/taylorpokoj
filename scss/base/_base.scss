@@ -12,10 +12,6 @@
 
 @font-face {
   font-family: 'cinzel';
-  // src: url('#{$path-font}Raleway/Raleway-Regular.ttf');
-  // src: url('#{$path-font}Poiret_One/PoiretOne-Regular.ttf');
-  // src: url('#{$path-font}Josefin_Sans/JosefinSans-Regular.ttf');
-  // src: url('#{$path-font}afta-serif/AftaSerifThin-Regular.ttf');
   src: url('#{$path-font}cinzel/Cinzel-Regular.otf');
 }
 
@@ -45,4 +41,5 @@ div::-webkit-scrollbar {
 a {
   text-decoration: none;
   color: $green;
+  transition: all 300ms ease-in-out;
 }

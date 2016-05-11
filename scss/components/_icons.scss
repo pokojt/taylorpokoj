@@ -18,7 +18,7 @@
   left: 17% !important;
   height: 50vh;
   transition: all 1s ease-in-out;
-  opacity: .7;
+  opacity: .6;
   z-index: 0;
 }
 
@@ -27,4 +27,15 @@
   position: relative;
   left: 70%;
   top: -20px;
+}
+
+.scroll {
+  position: relative;
+  top: 15vh;
+  left: 60%;
+  height: 60px;
+  opacity: .7;
+  &:hover {
+    cursor: pointer;
+  }
 }
