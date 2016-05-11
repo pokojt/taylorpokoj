@@ -130,4 +130,9 @@ a {
   left: 3% !important;
   transition: all 1s ease-in-out; }
 
+.logoMoved2 {
+  left: 17% !important;
+  height: 50vh;
+  transition: all 1s ease-in-out; }
+
 /*# sourceMappingURL=main.css.map */

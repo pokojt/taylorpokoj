@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(".spaceTwo").addClass("clicked");
     $(".spaceOne").addClass("notClicked");
     $(".spaceThree").addClass("notClicked");
-    $(".logo").addClass("logoMoved");
+    $(".logo").addClass("logoMoved2");
     $(".projects").removeClass("hidden");
   });
   $('#about').click(function() {
@@ -18,6 +18,7 @@ $(document).ready(function() {
     $(".spaceTwo").addClass("notClicked");
     $(".logo").addClass("logoMoved");
     $(".projects").addClass("hidden");
+    $(".logo").removeClass("logoMoved2");
   });
   $('#contact').click(function() {
     $(".spaceThree").removeClass("clicked");
@@ -28,6 +29,7 @@ $(document).ready(function() {
     $(".spaceTwo").addClass("notClicked");
     $(".logo").addClass("logoMoved");
     $(".projects").addClass("hidden");
+    $(".logo").removeClass("logoMoved2");
   });
 
   $('.logo').click(function() {
@@ -35,6 +37,7 @@ $(document).ready(function() {
     $(".spaceTwo").removeClass("clicked").removeClass("notClicked");
     $(".spaceOne").removeClass("notClicked").removeClass("notClicked");
     $(".logo").removeClass("logoMoved");
+    $(".logo").removeClass("logoMoved2");
     $(".projects").addClass("hidden");
   })
 })
