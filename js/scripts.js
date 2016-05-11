@@ -60,7 +60,7 @@ $(document).ready(function() {
   });
   $('.scroll2').click(function() {
     $('.spaceTwo').animate({
-      scrollTop: $("#project3").offset().top
+      scrollTop: $("#project3").offset().top +800
     }, 1500);
   });
 })
