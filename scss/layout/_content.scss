@@ -159,12 +159,41 @@
 /* ----------------------- Styles for Case Study -------*/
 
 .caseStudyWrapper {
+  @include flexbox($direction: column, $align: center);
   color: $darkgray;
   width: 80%;
   margin: 0 auto;
+  .caseItem {
+    margin: 5%;
+  }
   h1 {
     font-family: 'cinzel';
     color: $gold;
+  }
+  p {
+    font-size: 18px;
+  }
+  .tagline {
+    text-align: center;
+  }
+  .lead {
+    font-size: 21px;
+  }
+  .timeline {
+    color: $gold;
+    margin: 3% auto 6% auto;
+    text-align: center;
+    border: 2px solid $gold;
+    width: 250px;
+    padding: 15px 0 10px 0;
+  }
+}
+
+.goals {
+  @include flexbox($justify: space-around);
+  .goal {
+    width: 30%;
+    text-align: center;
   }
 }
 
@@ -234,7 +263,7 @@
   text-align: center;
   @include flexbox($direction: column, $justify: center, $align: space-around);
   .page {
-    margin: 8% 0 8% 0;
+    margin: 6% 0 6% 0;
     img {
       max-width: 100%;
     }
