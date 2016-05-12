@@ -194,9 +194,35 @@ a {
   margin: 3% 0 3% 0;
   display: flex; }
   .processItem .processText {
-    width: 50%; }
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%; }
   .processItem .processImages {
-    width: 50%; }
+    text-align: center;
+    width: 70%; }
+    .processItem .processImages .colorPalette {
+      width: 100%;
+      height: 40px;
+      display: flex; }
+      .processItem .processImages .colorPalette .color {
+        width: 20%;
+        height: 100%; }
+      .processItem .processImages .colorPalette #color1 {
+        background: #333333; }
+      .processItem .processImages .colorPalette #color2 {
+        background: #444444; }
+      .processItem .processImages .colorPalette #color3 {
+        background: #8D7131; }
+      .processItem .processImages .colorPalette #color4 {
+        background: #98B7AB; }
+      .processItem .processImages .colorPalette #color5 {
+        background: #F4F4F4;
+        border: 1px solid lightgrey; }
+    .processItem .processImages img.processCollage {
+      width: 100%;
+      min-width: 500px; }
 
 /* ----------------------- HEXAGON GRID -------*/
 #hexGrid {

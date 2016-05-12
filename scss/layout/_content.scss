@@ -191,9 +191,41 @@
   margin: 3% 0 3% 0;
   @include flexbox();
   .processText {
-    width: 50%;
+    padding: 2%;
+    @include flexbox($direction: column, $justify: center);
+    width: 30%;
   }
   .processImages {
-    width: 50%;
+    text-align: center;
+    width: 70%;
+    .colorPalette {
+      width: 100%;
+      height: 40px;
+      @include flexbox();
+      .color {
+        width: 20%;
+        height: 100%;
+      }
+      #color1 {
+        background:#333333;
+      }
+      #color2 {
+        background:#444444;
+      }
+      #color3 {
+        background:#8D7131;
+      }
+      #color4 {
+        background:#98B7AB;
+      }
+      #color5 {
+        background:#F4F4F4;
+        border: 1px solid lightgrey;
+      }
+    }
+    img.processCollage {
+      width: 100%;
+      min-width: 500px;
+    }
   }
 }
