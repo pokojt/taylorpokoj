@@ -138,11 +138,11 @@ a {
       .spaceTwo .projectItem .projectMedia #image1 {
         background-image: url("../img//songlabRedesign.png"); }
       .spaceTwo .projectItem .projectMedia #image2 {
-        background: red; }
+        background-image: url("../img//profile1.png"); }
       .spaceTwo .projectItem .projectMedia #image3 {
-        background: blue; }
+        background-image: url("../img//browse1.png"); }
       .spaceTwo .projectItem .projectMedia #image4 {
-        background: green; }
+        background-image: url("../img//old.png"); }
 
 .spaceThree {
   height: 100vh;
@@ -549,7 +549,8 @@ a {
   z-index: 0; }
 
 .logonav {
-  height: 70px; }
+  height: 70px;
+  margin: 2%; }
 
 .plusIcon {
   height: 60px;
