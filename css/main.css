@@ -224,6 +224,12 @@ a {
       width: 100%;
       min-width: 500px; }
 
+.pages {
+  display: flex;
+  flex-direction: column; }
+  .pages .page img {
+    max-width: 100%; }
+
 /* ----------------------- HEXAGON GRID -------*/
 #hexGrid {
   overflow: hidden;

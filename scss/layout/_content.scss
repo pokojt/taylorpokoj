@@ -229,3 +229,12 @@
     }
   }
 }
+
+.pages {
+  @include flexbox($direction: column);
+  .page {
+    img {
+      max-width: 100%;
+    }
+  }
+}
