@@ -231,10 +231,15 @@
 }
 
 .pages {
-  @include flexbox($direction: column);
+  text-align: center;
+  @include flexbox($direction: column, $justify: center, $align: space-around);
   .page {
+    margin: 8% 0 8% 0;
     img {
       max-width: 100%;
     }
+  }
+  .firstpage {
+    display: flex;
   }
 }

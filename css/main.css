@@ -225,10 +225,17 @@ a {
       min-width: 500px; }
 
 .pages {
+  text-align: center;
   display: flex;
-  flex-direction: column; }
-  .pages .page img {
-    max-width: 100%; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around; }
+  .pages .page {
+    margin: 8% 0 8% 0; }
+    .pages .page img {
+      max-width: 100%; }
+  .pages .firstpage {
+    display: flex; }
 
 /* ----------------------- HEXAGON GRID -------*/
 #hexGrid {
