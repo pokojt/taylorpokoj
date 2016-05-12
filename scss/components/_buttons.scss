@@ -23,3 +23,12 @@
     }
   }
 }
+
+.prototypebuttons {
+  @include flexbox($justify: center);
+  h3 {
+    border: 2px solid $gold;
+    padding: 15px 20px 10px 20px;
+    margin: 10px;
+  }
+}
