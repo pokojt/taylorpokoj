@@ -158,6 +158,9 @@
       #image20 {
         background-image: url("#{$path-img}/responsive2.png");
       }
+      .projectActions {
+        @include flexbox($justify: space-around);
+      }
     }
   }
 }
