@@ -50,12 +50,15 @@
 
 .scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
   position: relative;
-  top: 15vh;
-  left: 60%;
+  top: 5vh;
+  left: 30%;
   height: 40px;
   opacity: .5;
   &:hover {
     cursor: pointer;
+  }
+  @media screen and #{$brk-medium} {
+    display: none;
   }
 }
 

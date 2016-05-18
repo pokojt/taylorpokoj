@@ -116,18 +116,36 @@ a {
       margin-top: 0; }
   .spaceTwo .projectItem {
     height: 70vh;
-    z-index: 3;
     margin-top: 200px;
+    transition: all 500ms ease-in-out;
     padding-right: 20px;
     display: flex; }
+    @media screen and (max-height: 700px) {
+      .spaceTwo .projectItem {
+        margin-top: 120px; } }
+    @media screen and (max-width: 1170px) {
+      .spaceTwo .projectItem {
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin-top: 50px;
+        justify-content: center;
+        transition: all 500ms ease-in-out; } }
     .spaceTwo .projectItem .projectNumbers {
       width: 40vw;
       text-align: right; }
+      @media screen and (max-width: 1170px) {
+        .spaceTwo .projectItem .projectNumbers {
+          text-align: left; } }
       .spaceTwo .projectItem .projectNumbers h1 {
         font-size: 70px; }
     .spaceTwo .projectItem .projectDescription h1 {
       margin-top: 100px;
       color: #8C7036; }
+      @media screen and (max-width: 1170px) {
+        .spaceTwo .projectItem .projectDescription h1 {
+          margin-top: 50px; } }
     .spaceTwo .projectItem .projectMedia {
       padding-left: 20px; }
       .spaceTwo .projectItem .projectMedia .projectImage {
@@ -607,12 +625,15 @@ a {
 
 .scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
   position: relative;
-  top: 15vh;
-  left: 60%;
+  top: 5vh;
+  left: 30%;
   height: 40px;
   opacity: .5; }
   .scroll:hover, .scroll2:hover, .scroll3:hover, .scroll4:hover, .scroll5:hover {
     cursor: pointer; }
+  @media screen and (max-width: 1170px) {
+    .scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
+      display: none; } }
 
 .contacticon {
   height: 40px;

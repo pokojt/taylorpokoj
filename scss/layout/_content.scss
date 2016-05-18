@@ -73,13 +73,28 @@
   }
   .projectItem {
     height: 70vh;
-    z-index: 3;
     margin-top: 200px;
+    transition: all 500ms ease-in-out;
+    @media screen and #{$brk-medHeight} {
+      margin-top: 120px;
+    }
+    @media screen and #{$brk-medium} {
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      margin-top: 50px;
+      justify-content: center;
+      transition: all 500ms ease-in-out;
+    }
     padding-right: 20px;
     @include flexbox();
     .projectNumbers {
       width: 40vw;
       text-align: right;
+      @media screen and #{$brk-medium} {
+        text-align: left;
+      }
       h1 {
         font-size: 70px;
       }
@@ -88,6 +103,9 @@
       h1 {
         margin-top: 100px;
         color: $gold;
+        @media screen and #{$brk-medium} {
+          margin-top: 50px;
+        }
       }
     }
     .projectMedia {

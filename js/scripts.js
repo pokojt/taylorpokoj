@@ -390,21 +390,21 @@ var scroll1 = function() {
 var scroll2 = function() {
   $('.scroll2').click(function() {
     $('.spaceTwo').animate({
-      scrollTop: $("#project3").offset().top +800
+      scrollTop: $("#project3").offset().top +600
     }, 1500);
   });
 }
 var scroll3 = function() {
   $('.scroll3').click(function() {
     $('.spaceTwo').animate({
-      scrollTop: $("#project4").offset().top +1500
+      scrollTop: $("#project4").offset().top +1300
     }, 1500);
   });
 }
 var scroll4 = function() {
   $('.scroll4').click(function() {
     $('.spaceTwo').animate({
-      scrollTop: $("#project5").offset().top +2200
+      scrollTop: $("#project5").offset().top +2400
     }, 1500);
   });
 }
