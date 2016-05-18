@@ -76,6 +76,10 @@ a {
   .spaceOne .navigation {
     position: relative;
     bottom: -30%; }
+    @media screen and (max-height: 700px) {
+      .spaceOne .navigation {
+        bottom: -10%;
+        text-align: center; } }
     .spaceOne .navigation .links {
       display: inline;
       font-size: 18px;
@@ -208,7 +212,11 @@ a {
   overflow: scroll; }
   .spaceThree .aboutTaylor {
     width: 52%;
-    margin: 50vh 0 0 40px; }
+    margin: 50vh 0 0 40px;
+    transition: all 500ms ease-in-out; }
+    @media screen and (max-height: 700px) {
+      .spaceThree .aboutTaylor {
+        margin: 30vh 0 0 40px; } }
     .spaceThree .aboutTaylor h3 {
       font-size: 20px; }
     .spaceThree .aboutTaylor p {
