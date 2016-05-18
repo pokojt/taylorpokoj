@@ -320,7 +320,7 @@ var project5gallery = function() {
     });
 }
 
-$(document).ready(function() {
+var clickWork = function() {
   $('#work').click(function() {
     $(".spaceOne").removeClass("clicked");
     $(".spaceThree").removeClass("clicked");
@@ -334,6 +334,8 @@ $(document).ready(function() {
     $(".contactInfo").addClass("hidden");
     $(".twoHeader").hide();
   });
+}
+var clickAbout = function() {
   $('#about').click(function() {
     $(".spaceOne").removeClass("clicked");
     $(".spaceTwo").removeClass("clicked");
@@ -346,8 +348,9 @@ $(document).ready(function() {
     $(".logo").removeClass("logoMoved2");
     $(".aboutTaylor").removeClass("hidden");
     $(".contactInfo").addClass("hidden");
-
   });
+}
+var clickContact = function() {
   $('#contact').click(function() {
     $(".spaceThree").removeClass("clicked");
     $(".spaceTwo").removeClass("clicked");
@@ -362,7 +365,8 @@ $(document).ready(function() {
     $(".aboutTaylor").addClass("hidden");
 
   });
-
+}
+var clickLogo = function() {
   $('.logo').click(function() {
     $(".spaceThree").removeClass("clicked").removeClass("notClicked");
     $(".spaceTwo").removeClass("clicked").removeClass("notClicked");
@@ -374,33 +378,53 @@ $(document).ready(function() {
     $(".contactInfo").addClass("hidden");
     $(".twoHeader").show();
   });
+}
 
+var scroll1 = function() {
   $('.scroll').click(function() {
     $('.spaceTwo').animate({
       scrollTop: $("#project2").offset().top -100
     }, 1500);
   });
+}
+var scroll2 = function() {
   $('.scroll2').click(function() {
     $('.spaceTwo').animate({
       scrollTop: $("#project3").offset().top +800
     }, 1500);
   });
+}
+var scroll3 = function() {
   $('.scroll3').click(function() {
     $('.spaceTwo').animate({
       scrollTop: $("#project4").offset().top +1500
     }, 1500);
   });
+}
+var scroll4 = function() {
   $('.scroll4').click(function() {
     $('.spaceTwo').animate({
       scrollTop: $("#project5").offset().top +2200
     }, 1500);
   });
+}
+
+$(document).ready(function() {
+
+  clickWork();
+  clickAbout();
+  clickContact();
+  clickLogo();
+
+  scroll1();
+  scroll2();
+  scroll3();
+  scroll4();
 
   project1gallery();
   project2gallery();
   project3gallery();
   project4gallery();
   project5gallery();
-
 
 })
