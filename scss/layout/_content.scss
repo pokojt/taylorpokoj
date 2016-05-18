@@ -28,6 +28,9 @@
       bottom: -10%;
       text-align: center;
     }
+    @media screen and #{$brk-tablet} {
+      text-align: left;
+    }
 
     .links {
       display: inline;
@@ -203,6 +206,9 @@
     transition: all 500ms ease-in-out;
     @media screen and #{$brk-medHeight} {
       margin: 30vh 0 0 40px;
+    }
+    @media screen and #{$brk-tablet} {
+      margin: 10vh 0 0 40px;
     }
     h3 {
       @include textFormat(20px);

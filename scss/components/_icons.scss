@@ -20,6 +20,9 @@
   transition: all 1s ease-in-out;
   opacity: .5;
   z-index: 0;
+  @media screen and #{$brk-tablet} {
+    display: none;
+  }
 }
 
 .logonav {
@@ -37,6 +40,9 @@
     cursor: pointer;
     height: 70px;
     transition: all 300ms ease-in-out;
+  }
+  @media screen and #{$brk-tablet} {
+    left: 40%;
   }
 }
 
