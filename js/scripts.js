@@ -1,4 +1,132 @@
+var project1gallery = function() {
+  var project1click = 0;
 
+    $('#plus1').click(function() {
+      if (project1click < 3) {
+        project1click +=1;
+      }
+      console.log(project1click);
+
+      if (project1click === 1) {
+        $("#back1").show();
+        $("#image1").hide();
+        $("#image2").show();
+        $("#image3").hide();
+        $("#image4").hide();
+      } else if (project1click ===2) {
+        $("#image1").hide();
+        $("#image2").hide();
+        $("#image3").show();
+        $("#image4").hide();
+      } else if (project1click ===3){
+        $("#image1").hide();
+        $("#image2").hide();
+        $("#image3").hide();
+        $("#image4").show();
+      } else {
+          $("#image1").show();
+          $("#image2").hide();
+          $("#image3").hide();
+          $("#image4").hide();
+          $("#back1").hide();
+      }
+
+    });
+    $('#back1').click(function() {
+      if (project1click > 0) {
+        project1click -=1;
+      }
+      console.log(project1click);
+      if (project1click === 1) {
+        $("#image1").hide();
+        $("#image2").show();
+        $("#image3").hide();
+        $("#image4").hide();
+      } else if (project1click ===2) {
+        $("#image1").hide();
+        $("#image2").hide();
+        $("#image3").show();
+        $("#image4").hide();
+      } else if (project1click ===3){
+        $("#image1").hide();
+        $("#image2").hide();
+        $("#image3").hide();
+        $("#image4").show();
+      } else {
+          $("#image1").show();
+          $("#image2").hide();
+          $("#image3").hide();
+          $("#image4").hide();
+          $("#back1").hide();
+      }
+
+    });
+
+}
+
+var project2gallery = function() {
+  var project2click = 0;
+
+    $('#plus2').click(function() {
+      if (project2click < 3) {
+        project2click +=1;
+      }
+      console.log(project2click);
+
+      if (project2click === 1) {
+        $("#back2").show();
+        $("#image5").hide();
+        $("#image6").show();
+        $("#image7").hide();
+        $("#image8").hide();
+      } else if (project2click ===2) {
+        $("#image5").hide();
+        $("#image6").hide();
+        $("#image7").show();
+        $("#image8").hide();
+      } else if (project2click ===3){
+        $("#image5").hide();
+        $("#image6").hide();
+        $("#image7").hide();
+        $("#image8").show();
+      } else {
+          $("#image5").show();
+          $("#image6").hide();
+          $("#image7").hide();
+          $("#image8").hide();
+          $("#back2").hide();
+      }
+
+    });
+    $('#back2').click(function() {
+      if (project2click > 0) {
+        project2click -=1;
+      }
+      console.log(project2click);
+      if (project2click === 1) {
+        $("#image5").hide();
+        $("#image6").show();
+        $("#image7").hide();
+        $("#image8").hide();
+      } else if (project2click ===2) {
+        $("#image5").hide();
+        $("#image6").hide();
+        $("#image7").show();
+        $("#image8").hide();
+      } else if (project2click ===3){
+        $("#image5").hide();
+        $("#image6").hide();
+        $("#image7").hide();
+        $("#image8").show();
+      } else {
+          $("#image5").show();
+          $("#image6").hide();
+          $("#image7").hide();
+          $("#image8").hide();
+          $("#back2").hide();
+      }
+    });
+}
 
 
 $(document).ready(function() {
@@ -67,69 +195,8 @@ $(document).ready(function() {
     }, 1500);
   });
 
-var project1click = 0;
-
-  $('#plus1').click(function() {
-    if (project1click < 3) {
-      project1click +=1;
-    }
-    console.log(project1click);
-
-    if (project1click === 1) {
-      $("#back1").show();
-      $("#image1").hide();
-      $("#image2").show();
-      $("#image3").hide();
-      $("#image4").hide();
-    } else if (project1click ===2) {
-      $("#image1").hide();
-      $("#image2").hide();
-      $("#image3").show();
-      $("#image4").hide();
-    } else if (project1click ===3){
-      $("#image1").hide();
-      $("#image2").hide();
-      $("#image3").hide();
-      $("#image4").show();
-    } else {
-        $("#image1").show();
-        $("#image2").hide();
-        $("#image3").hide();
-        $("#image4").hide();
-        $("#back1").hide();
-    }
-
-  });
-
-  $('#back1').click(function() {
-    if (project1click > 0) {
-      project1click -=1;
-    }
-    console.log(project1click);
-    if (project1click === 1) {
-      $("#image1").hide();
-      $("#image2").show();
-      $("#image3").hide();
-      $("#image4").hide();
-    } else if (project1click ===2) {
-      $("#image1").hide();
-      $("#image2").hide();
-      $("#image3").show();
-      $("#image4").hide();
-    } else if (project1click ===3){
-      $("#image1").hide();
-      $("#image2").hide();
-      $("#image3").hide();
-      $("#image4").show();
-    } else {
-        $("#image1").show();
-        $("#image2").hide();
-        $("#image3").hide();
-        $("#image4").hide();
-        $("#back1").hide();
-    }
-
-  })
+  project1gallery();
+  project2gallery();
 
 
 })

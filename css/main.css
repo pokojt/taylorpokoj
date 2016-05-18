@@ -143,6 +143,22 @@ a {
         background-image: url("../img//browse1.png"); }
       .spaceTwo .projectItem .projectMedia #image4 {
         background-image: url("../img//old.png"); }
+      .spaceTwo .projectItem .projectMedia #image5 {
+        background-image: url("../img//movrhome.png"); }
+      .spaceTwo .projectItem .projectMedia #image6 {
+        background-image: url("../img//movrpost.png"); }
+      .spaceTwo .projectItem .projectMedia #image7 {
+        background-image: url("../img//movrdetail.png"); }
+      .spaceTwo .projectItem .projectMedia #image8 {
+        background-image: url("../img//openmoves.png"); }
+      .spaceTwo .projectItem .projectMedia #image9 {
+        background-image: url("../img//bidderhome.png"); }
+      .spaceTwo .projectItem .projectMedia #image10 {
+        background-image: url("../img//postbid.png"); }
+      .spaceTwo .projectItem .projectMedia #image11 {
+        background-image: url("../img//offerjob.png"); }
+      .spaceTwo .projectItem .projectMedia #image12 {
+        background-image: url("../img//jobboard.png"); }
 
 .spaceThree {
   height: 100vh;
