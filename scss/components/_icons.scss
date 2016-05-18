@@ -20,6 +20,9 @@
   transition: all 1s ease-in-out;
   opacity: .5;
   z-index: 0;
+  @media screen and #{$brk-tablet} {
+    display: none;
+  }
 }
 
 .logonav {
@@ -38,6 +41,9 @@
     height: 70px;
     transition: all 300ms ease-in-out;
   }
+  @media screen and #{$brk-tablet} {
+    left: 40%;
+  }
 }
 
 .socialIcons {
@@ -50,12 +56,15 @@
 
 .scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
   position: relative;
-  top: 15vh;
-  left: 60%;
+  top: 5vh;
+  left: 30%;
   height: 40px;
   opacity: .5;
   &:hover {
     cursor: pointer;
+  }
+  @media screen and #{$brk-medium} {
+    display: none;
   }
 }
 
