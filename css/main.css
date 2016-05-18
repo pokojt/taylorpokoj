@@ -159,6 +159,22 @@ a {
         background-image: url("../img//offerjob.png"); }
       .spaceTwo .projectItem .projectMedia #image12 {
         background-image: url("../img//jobboard.png"); }
+      .spaceTwo .projectItem .projectMedia #image13 {
+        background-image: url("../img//yerbahome.png"); }
+      .spaceTwo .projectItem .projectMedia #image14 {
+        background-image: url("../img//yerbacategories.png"); }
+      .spaceTwo .projectItem .projectMedia #image15 {
+        background-image: url("../img//yerbaproducts.png"); }
+      .spaceTwo .projectItem .projectMedia #image16 {
+        background-image: url("../img//yerbacart.png"); }
+      .spaceTwo .projectItem .projectMedia #image17 {
+        background-image: url("../img//angularfood.png"); }
+      .spaceTwo .projectItem .projectMedia #image18 {
+        background-image: url("../img//angulartap.png"); }
+      .spaceTwo .projectItem .projectMedia #image19 {
+        background-image: url("../img//responsive.png"); }
+      .spaceTwo .projectItem .projectMedia #image20 {
+        background-image: url("../img//responsive2.png"); }
 
 .spaceThree {
   height: 100vh;
@@ -580,13 +596,13 @@ a {
     height: 60px;
     margin-right: 10px; }
 
-.scroll, .scroll2, .scroll3 {
+.scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
   position: relative;
   top: 15vh;
   left: 60%;
   height: 40px;
   opacity: .5; }
-  .scroll:hover, .scroll2:hover, .scroll3:hover {
+  .scroll:hover, .scroll2:hover, .scroll3:hover, .scroll4:hover, .scroll5:hover {
     cursor: pointer; }
 
 .contacticon {

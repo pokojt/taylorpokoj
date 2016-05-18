@@ -128,6 +128,197 @@ var project2gallery = function() {
     });
 }
 
+var project3gallery = function() {
+  var project3click = 0;
+
+    $('#plus3').click(function() {
+      if (project3click < 3) {
+        project3click +=1;
+      }
+      console.log(project3click);
+
+      if (project3click === 1) {
+        $("#back3").show();
+        $("#image9").hide();
+        $("#image10").show();
+        $("#image11").hide();
+        $("#image12").hide();
+      } else if (project3click ===2) {
+        $("#image9").hide();
+        $("#image10").hide();
+        $("#image11").show();
+        $("#image12").hide();
+      } else if (project3click ===3){
+        $("#image9").hide();
+        $("#image10").hide();
+        $("#image11").hide();
+        $("#image12").show();
+      } else {
+          $("#image9").show();
+          $("#image10").hide();
+          $("#image11").hide();
+          $("#image12").hide();
+          $("#back3").hide();
+      }
+
+    });
+    $('#back3').click(function() {
+      if (project3click > 0) {
+        project3click -=1;
+      }
+      console.log(project3click);
+      if (project3click === 1) {
+        $("#image9").hide();
+        $("#image10").show();
+        $("#image11").hide();
+        $("#image12").hide();
+      } else if (project3click ===2) {
+        $("#image9").hide();
+        $("#image10").hide();
+        $("#image11").show();
+        $("#image12").hide();
+      } else if (project3click ===3){
+        $("#image9").hide();
+        $("#image10").hide();
+        $("#image11").hide();
+        $("#image12").show();
+      } else {
+          $("#image9").show();
+          $("#image10").hide();
+          $("#image11").hide();
+          $("#image12").hide();
+          $("#back3").hide();
+      }
+    });
+}
+
+var project4gallery = function() {
+  var project4click = 0;
+
+    $('#plus4').click(function() {
+      if (project4click < 3) {
+        project4click +=1;
+      }
+      console.log(project4click);
+
+      if (project4click === 1) {
+        $("#back4").show();
+        $("#image13").hide();
+        $("#image14").show();
+        $("#image15").hide();
+        $("#image16").hide();
+      } else if (project4click ===2) {
+        $("#image13").hide();
+        $("#image14").hide();
+        $("#image15").show();
+        $("#image16").hide();
+      } else if (project4click ===3){
+        $("#image13").hide();
+        $("#image14").hide();
+        $("#image15").hide();
+        $("#image16").show();
+      } else {
+          $("#image13").show();
+          $("#image14").hide();
+          $("#image15").hide();
+          $("#image16").hide();
+          $("#back4").hide();
+      }
+
+    });
+    $('#back4').click(function() {
+      if (project4click > 0) {
+        project4click -=1;
+      }
+      console.log(project4click);
+      if (project4click === 1) {
+        $("#image13").hide();
+        $("#image14").show();
+        $("#image15").hide();
+        $("#image16").hide();
+      } else if (project4click ===2) {
+        $("#image13").hide();
+        $("#image14").hide();
+        $("#image15").show();
+        $("#image16").hide();
+      } else if (project4click ===3){
+        $("#image13").hide();
+        $("#image14").hide();
+        $("#image15").hide();
+        $("#image16").show();
+      } else {
+          $("#image13").show();
+          $("#image14").hide();
+          $("#image15").hide();
+          $("#image16").hide();
+          $("#back4").hide();
+      }
+    });
+}
+
+var project5gallery = function() {
+  var project5click = 0;
+
+    $('#plus5').click(function() {
+      if (project5click < 3) {
+        project5click +=1;
+      }
+      console.log(project5click);
+
+      if (project5click === 1) {
+        $("#back5").show();
+        $("#image17").hide();
+        $("#image18").show();
+        $("#image19").hide();
+        $("#image20").hide();
+      } else if (project5click ===2) {
+        $("#image17").hide();
+        $("#image18").hide();
+        $("#image19").show();
+        $("#image20").hide();
+      } else if (project5click ===3){
+        $("#image17").hide();
+        $("#image18").hide();
+        $("#image19").hide();
+        $("#image20").show();
+      } else {
+          $("#image17").show();
+          $("#image18").hide();
+          $("#image19").hide();
+          $("#image20").hide();
+          $("#back5").hide();
+      }
+
+    });
+    $('#back5').click(function() {
+      if (project5click > 0) {
+        project5click -=1;
+      }
+      console.log(project5click);
+      if (project5click === 1) {
+        $("#image17").hide();
+        $("#image18").show();
+        $("#image19").hide();
+        $("#image20").hide();
+      } else if (project5click ===2) {
+        $("#image17").hide();
+        $("#image18").hide();
+        $("#image19").show();
+        $("#image20").hide();
+      } else if (project5click ===3){
+        $("#image17").hide();
+        $("#image18").hide();
+        $("#image19").hide();
+        $("#image20").show();
+      } else {
+          $("#image17").show();
+          $("#image18").hide();
+          $("#image19").hide();
+          $("#image20").hide();
+          $("#back5").hide();
+      }
+    });
+}
 
 $(document).ready(function() {
   $('#work').click(function() {
@@ -194,9 +385,22 @@ $(document).ready(function() {
       scrollTop: $("#project3").offset().top +800
     }, 1500);
   });
+  $('.scroll3').click(function() {
+    $('.spaceTwo').animate({
+      scrollTop: $("#project4").offset().top +1500
+    }, 1500);
+  });
+  $('.scroll4').click(function() {
+    $('.spaceTwo').animate({
+      scrollTop: $("#project5").offset().top +2200
+    }, 1500);
+  });
 
   project1gallery();
   project2gallery();
+  project3gallery();
+  project4gallery();
+  project5gallery();
 
 
 })
