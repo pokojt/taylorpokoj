@@ -46,6 +46,9 @@ div::-o-scrollbar {
 div::-ms-scrollbar {
   display: none; }
 
+div {
+  -ms-overflow-style: none; }
+
 /**
  * Basic styles for links
  */
