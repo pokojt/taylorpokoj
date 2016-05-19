@@ -1,5 +1,8 @@
 .backgroundWrapper {
   display: flex;
+  @media screen and #{$brk-small} {
+    flex-direction: column;
+  }
 }
 
 .spaceOne {
@@ -10,6 +13,9 @@
   text-align: right;
   transition: all 1s ease-in-out;
   overflow: scroll;
+  @media screen and #{$brk-small} {
+    width: 100%;
+  }
   @include flexbox($direction: column);
   h1 {
     @include textFormat(70px, $cream, lighter, 3px);
@@ -32,6 +38,7 @@
       text-align: left;
     }
 
+
     .links {
       display: inline;
       font-size: 18px;
@@ -43,6 +50,9 @@
         border-bottom: 1px solid $cream;
         transition: all 1s linear;
       }
+      @media screen and #{$brk-small} {
+        display: inline;
+      }
     }
   }
 }
@@ -50,8 +60,19 @@
 .notClicked {
   .navigation .links {
     display: block;
+    @media screen and #{$brk-small} {
+      display: inline;
+    }
+  }
+  .spaceOne {
+    @media screen and #{$brk-small} {
+      border: 1px solid cyan;
+      position: absolute;
+      bottom: 1px;
+    }
   }
 }
+
 
 
 .spaceTwo {
@@ -62,6 +83,9 @@
   background-attachment: fixed;
   @include flexbox($direction: column);
   transition: all 1s ease-in-out;
+  @media screen and #{$brk-small} {
+    width: 100%;
+  }
   h1 {
     @include textFormat(60px, $black, lighter, 3px);
     margin: 310px 0px 0px 5px;
@@ -200,12 +224,18 @@
   background-position: right;
   background-size: cover;
   overflow: scroll;
+  @media screen and #{$brk-small} {
+    width: 100%;
+  }
   .aboutTaylor {
     width: 52%;
     margin: 50vh 0 0 40px;
     transition: all 500ms ease-in-out;
     @media screen and #{$brk-medHeight} {
       margin: 30vh 0 0 40px;
+    }
+    @media screen and #{$brk-small} {
+      width: 80%;
     }
     @media screen and #{$brk-tablet} {
       margin: 10vh 0 0 40px;
@@ -222,11 +252,19 @@
 .clicked{
   width: 70% !important;
   transition: all 1s ease-in-out;
+  @media screen and #{$brk-small} {
+    width: 100% !important;
+    height: 80vh;
+  }
 }
 
 .notClicked {
   width: 15% !important;
   transition: all 1s ease-in-out;
+  @media screen and #{$brk-small} {
+    width: 100% !important;
+    height: 10vh;
+  }
   h1 {
     color: transparent;
   }
