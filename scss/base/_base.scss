@@ -30,7 +30,28 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body::-moz-scrollbar {
+  display: none;
+}
+
+body::-o-scrollbar {
+  display: none;
+}
+
+body::-ms-scrollbar {
+  display: none;
+}
+
 div::-webkit-scrollbar {
+  display: none;
+}
+div::-moz-scrollbar {
+  display: none;
+}
+div::-o-scrollbar {
+  display: none;
+}
+div::-ms-scrollbar {
   display: none;
 }
 
