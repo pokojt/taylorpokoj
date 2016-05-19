@@ -25,7 +25,25 @@ html, body {
 body::-webkit-scrollbar {
   display: none; }
 
+body::-moz-scrollbar {
+  display: none; }
+
+body::-o-scrollbar {
+  display: none; }
+
+body::-ms-scrollbar {
+  display: none; }
+
 div::-webkit-scrollbar {
+  display: none; }
+
+div::-moz-scrollbar {
+  display: none; }
+
+div::-o-scrollbar {
+  display: none; }
+
+div::-ms-scrollbar {
   display: none; }
 
 /**
@@ -52,6 +70,9 @@ a {
  */
 .backgroundWrapper {
   display: flex; }
+  @media screen and (max-width: 655px) {
+    .backgroundWrapper {
+      flex-direction: column; } }
 
 .spaceOne {
   background: url("../img/clouds.jpg") no-repeat center center fixed;
@@ -63,6 +84,9 @@ a {
   overflow: scroll;
   display: flex;
   flex-direction: column; }
+  @media screen and (max-width: 655px) {
+    .spaceOne {
+      width: 100%; } }
   .spaceOne h1 {
     font-size: 70px;
     color: #F5F5F5;
@@ -93,9 +117,20 @@ a {
         cursor: pointer;
         border-bottom: 1px solid #F5F5F5;
         transition: all 1s linear; }
+      @media screen and (max-width: 655px) {
+        .spaceOne .navigation .links {
+          display: inline; } }
 
 .notClicked .navigation .links {
   display: block; }
+  @media screen and (max-width: 655px) {
+    .notClicked .navigation .links {
+      display: inline; } }
+@media screen and (max-width: 655px) {
+  .notClicked .spaceOne {
+    border: 1px solid cyan;
+    position: absolute;
+    bottom: 1px; } }
 
 .spaceTwo {
   height: 100vh;
@@ -106,6 +141,9 @@ a {
   display: flex;
   flex-direction: column;
   transition: all 1s ease-in-out; }
+  @media screen and (max-width: 655px) {
+    .spaceTwo {
+      width: 100%; } }
   .spaceTwo h1 {
     font-size: 60px;
     color: #4A4A4A;
@@ -213,6 +251,9 @@ a {
   background-position: right;
   background-size: cover;
   overflow: scroll; }
+  @media screen and (max-width: 655px) {
+    .spaceThree {
+      width: 100%; } }
   .spaceThree .aboutTaylor {
     width: 52%;
     margin: 50vh 0 0 40px;
@@ -220,6 +261,9 @@ a {
     @media screen and (max-height: 700px) {
       .spaceThree .aboutTaylor {
         margin: 30vh 0 0 40px; } }
+    @media screen and (max-width: 655px) {
+      .spaceThree .aboutTaylor {
+        width: 80%; } }
     @media screen and (max-width: 900px) {
       .spaceThree .aboutTaylor {
         margin: 10vh 0 0 40px; } }
@@ -232,10 +276,18 @@ a {
 .clicked {
   width: 70% !important;
   transition: all 1s ease-in-out; }
+  @media screen and (max-width: 655px) {
+    .clicked {
+      width: 100% !important;
+      height: 80vh; } }
 
 .notClicked {
   width: 15% !important;
   transition: all 1s ease-in-out; }
+  @media screen and (max-width: 655px) {
+    .notClicked {
+      width: 100% !important;
+      height: 10vh; } }
   .notClicked h1 {
     color: transparent; }
   .notClicked p {
