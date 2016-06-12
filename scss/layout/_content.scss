@@ -16,7 +16,7 @@
   overflow: scroll;
   @media screen and #{$brk-small} {
     width: 100%;
-    height: 70vh;
+    height: 65vh;
   }
   @include flexbox($direction: column);
   h1 {
@@ -103,7 +103,7 @@
   transition: all 1s ease-in-out;
   @media screen and #{$brk-small} {
     width: 100%;
-    height: 15vh;
+    height: 12vh;
   }
   h1 {
     @include textFormat(60px, $black, lighter, 3px);
@@ -328,7 +328,7 @@
 @media screen and #{$brk-small} {
   .spaceOne.clicked h1 {
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 210px;
     transition: all 1s ease-in-out;
   }
 }
