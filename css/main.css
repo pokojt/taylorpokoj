@@ -312,6 +312,9 @@ a {
         margin: 10vh 0 0 40px; } }
     .spaceThree .aboutTaylor h3 {
       font-size: 20px; }
+      @media screen and (max-width: 655px) {
+        .spaceThree .aboutTaylor h3 {
+          text-align: center; } }
     .spaceThree .aboutTaylor p {
       font-size: 17px;
       line-height: 17px; }
@@ -752,6 +755,9 @@ a {
   .socialIcons .socialicon {
     height: 60px;
     margin-right: 10px; }
+  @media screen and (max-width: 655px) {
+    .socialIcons {
+      text-align: center; } }
 
 .scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
   position: relative;

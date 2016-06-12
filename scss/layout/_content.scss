@@ -287,6 +287,9 @@
     }
     h3 {
       @include textFormat(20px);
+      @media screen and #{$brk-small} {
+        text-align: center;
+      }
     }
     p {
       @include textFormat(17px, $l-height: 17px);

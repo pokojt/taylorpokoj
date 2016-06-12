@@ -60,6 +60,9 @@
     height: 60px;
     margin-right: 10px;
   }
+  @media screen and #{$brk-small} {
+    text-align: center;
+  }
 }
 
 .scroll, .scroll2, .scroll3, .scroll4, .scroll5 {
