@@ -373,7 +373,7 @@ var clickLogo = function() {
   $('.logo').click(function() {
     $(".spaceThree").removeClass("clicked").removeClass("notClicked");
     $(".spaceTwo").removeClass("clicked").removeClass("notClicked");
-    $(".spaceOne").removeClass("notClicked").removeClass("notClicked");
+    $(".spaceOne").removeClass("notClicked").removeClass("clicked");
     $(".logo").removeClass("logoMoved");
     $(".logo").removeClass("logoMoved2");
     $(".projects").addClass("hidden");
