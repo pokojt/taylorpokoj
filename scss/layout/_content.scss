@@ -111,10 +111,18 @@
       font-size: 45px;
     }
   }
+  .lastName {
+    @media screen and #{$brk-small} {
+      display: none;
+    }
+  }
   p {
     width: 90%;
     @include textFormat($l-height: 19px);
     margin-left: 25px;
+    @media screen and #{$brk-small} {
+      text-align: center;
+    }
   }
   .projects{
     h1 {

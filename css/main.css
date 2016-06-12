@@ -174,10 +174,16 @@ a {
     @media screen and (max-width: 900px) {
       .spaceTwo h1 {
         font-size: 45px; } }
+  @media screen and (max-width: 655px) {
+    .spaceTwo .lastName {
+      display: none; } }
   .spaceTwo p {
     width: 90%;
     line-height: 19px;
     margin-left: 25px; }
+    @media screen and (max-width: 655px) {
+      .spaceTwo p {
+        text-align: center; } }
   .spaceTwo .projects {
     margin-bottom: 11%; }
     .spaceTwo .projects h1 {
