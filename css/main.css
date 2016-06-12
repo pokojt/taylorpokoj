@@ -180,12 +180,12 @@ a {
       display: none; } }
   .spaceTwo h4 {
     width: 90%;
-    margin: 10px 10px 0 10px;
-    font-size: 15px;
+    margin: 10px 0px 0px 15px;
+    font-size: 14px;
     line-height: 19px; }
     @media screen and (max-width: 655px) {
       .spaceTwo h4 {
-        text-align: center; } }
+        text-align: right; } }
   .spaceTwo p {
     width: 90%;
     line-height: 19px;
