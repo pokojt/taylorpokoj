@@ -89,7 +89,8 @@ a {
   flex-direction: column; }
   @media screen and (max-width: 655px) {
     .spaceOne {
-      width: 100%; } }
+      width: 100%;
+      height: 70vh; } }
   .spaceOne h1 {
     font-size: 70px;
     color: #F5F5F5;
@@ -97,6 +98,13 @@ a {
     letter-spacing: 3px;
     margin: 300px 10px 0px 0px;
     font-family: 'cinzel'; }
+    @media screen and (max-width: 900px) {
+      .spaceOne h1 {
+        font-size: 45px;
+        margin: 308px 10px 0px 0px; } }
+    @media screen and (max-width: 655px) {
+      .spaceOne h1 {
+        margin: 250px 10px 0px 0px; } }
   .spaceOne .contactInfo {
     color: #F5F5F5;
     padding-right: 20px; }
@@ -110,6 +118,13 @@ a {
     @media screen and (max-width: 900px) {
       .spaceOne .navigation {
         text-align: left; } }
+    @media screen and (max-width: 655px) {
+      .spaceOne .navigation {
+        text-align: center;
+        position: absolute;
+        top: 4%;
+        width: 100%;
+        height: 15vh; } }
     .spaceOne .navigation .links {
       display: inline;
       font-size: 18px;
@@ -122,7 +137,8 @@ a {
         transition: all 1s linear; }
       @media screen and (max-width: 655px) {
         .spaceOne .navigation .links {
-          display: inline; } }
+          display: inline;
+          margin: 20px; } }
 
 .notClicked .navigation .links {
   display: block; }
@@ -146,18 +162,22 @@ a {
   transition: all 1s ease-in-out; }
   @media screen and (max-width: 655px) {
     .spaceTwo {
-      width: 100%; } }
+      width: 100%;
+      height: 15vh; } }
   .spaceTwo h1 {
     font-size: 60px;
     color: #4A4A4A;
     font-weight: lighter;
     letter-spacing: 3px;
     margin: 310px 0px 0px 5px;
-    font-family: "cinzel"; }
+    font-family: 'cinzel'; }
+    @media screen and (max-width: 900px) {
+      .spaceTwo h1 {
+        font-size: 45px; } }
   .spaceTwo p {
     width: 90%;
     line-height: 19px;
-    margin-left: 10px; }
+    margin-left: 25px; }
   .spaceTwo .projects {
     margin-bottom: 11%; }
     .spaceTwo .projects h1 {
@@ -166,7 +186,6 @@ a {
     height: 70vh;
     margin-top: 200px;
     transition: all 500ms ease-in-out;
-    padding-right: 20px;
     display: flex; }
     @media screen and (max-height: 700px) {
       .spaceTwo .projectItem {
@@ -186,6 +205,9 @@ a {
       @media screen and (max-width: 1170px) {
         .spaceTwo .projectItem .projectNumbers {
           text-align: left; } }
+      @media screen and (max-width: 655px) {
+        .spaceTwo .projectItem .projectNumbers {
+          text-align: center; } }
       .spaceTwo .projectItem .projectNumbers h1 {
         font-size: 70px; }
     .spaceTwo .projectItem .projectDescription h1 {
@@ -195,12 +217,14 @@ a {
         .spaceTwo .projectItem .projectDescription h1 {
           margin-top: 50px; } }
     .spaceTwo .projectItem .projectMedia {
-      padding-left: 20px; }
+      max-width: 100%; }
       .spaceTwo .projectItem .projectMedia .projectImage {
         margin-right: 20%;
         background-size: cover;
+        background-position: center;
         height: 300px;
-        width: 400px; }
+        width: 400px;
+        max-width: 100% !important; }
       .spaceTwo .projectItem .projectMedia #image1 {
         background-image: url("../img//songlabRedesign.png"); }
       .spaceTwo .projectItem .projectMedia #image2 {
@@ -256,7 +280,8 @@ a {
   overflow: scroll; }
   @media screen and (max-width: 655px) {
     .spaceThree {
-      width: 100%; } }
+      width: 100%;
+      height: 15vh; } }
   .spaceThree .aboutTaylor {
     width: 52%;
     margin: 50vh 0 0 40px;
@@ -282,7 +307,7 @@ a {
   @media screen and (max-width: 655px) {
     .clicked {
       width: 100% !important;
-      height: 80vh; } }
+      height: 70vh; } }
 
 .notClicked {
   width: 15% !important;
@@ -290,7 +315,7 @@ a {
   @media screen and (max-width: 655px) {
     .notClicked {
       width: 100% !important;
-      height: 10vh; } }
+      height: 15vh; } }
   .notClicked h1 {
     color: transparent; }
   .notClicked p {
@@ -659,6 +684,11 @@ a {
   transition: all 1s ease-in-out; }
   .logo:hover {
     cursor: pointer; }
+  @media screen and (max-width: 655px) {
+    .logo {
+      height: 100px;
+      top: 80px;
+      left: 35%; } }
 
 .logoMoved {
   left: 3% !important;
@@ -691,6 +721,9 @@ a {
   @media screen and (max-width: 900px) {
     .plusIcon {
       left: 40%; } }
+  @media screen and (max-width: 655px) {
+    .plusIcon {
+      display: none; } }
 
 .socialIcons {
   margin-top: 3%; }

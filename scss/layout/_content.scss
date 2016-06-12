@@ -15,12 +15,20 @@
   overflow: scroll;
   @media screen and #{$brk-small} {
     width: 100%;
+    height: 70vh;
   }
   @include flexbox($direction: column);
   h1 {
     @include textFormat(70px, $cream, lighter, 3px);
     margin: 300px 10px 0px 0px;
     font-family: 'cinzel';
+    @media screen and #{$brk-tablet} {
+      font-size: 45px;
+      margin: 308px 10px 0px 0px;
+    }
+      @media screen and #{$brk-small} {
+        margin: 250px 10px 0px 0px;
+      }
   }
   .contactInfo {
     color: $cream;
@@ -37,6 +45,13 @@
     @media screen and #{$brk-tablet} {
       text-align: left;
     }
+    @media screen and #{$brk-small} {
+      text-align: center;
+      position: absolute;
+      top: 4%;
+      width: 100%;
+      height: 15vh;
+    }
 
 
     .links {
@@ -52,6 +67,7 @@
       }
       @media screen and #{$brk-small} {
         display: inline;
+        margin: 20px;
       }
     }
   }
@@ -85,16 +101,20 @@
   transition: all 1s ease-in-out;
   @media screen and #{$brk-small} {
     width: 100%;
+    height: 15vh;
   }
   h1 {
     @include textFormat(60px, $black, lighter, 3px);
     margin: 310px 0px 0px 5px;
-    font-family: 'cinzel'
+    font-family: 'cinzel';
+    @media screen and #{$brk-tablet} {
+      font-size: 45px;
+    }
   }
   p {
     width: 90%;
     @include textFormat($l-height: 19px);
-    margin-left: 10px;
+    margin-left: 25px;
   }
   .projects{
     h1 {
@@ -118,13 +138,16 @@
       justify-content: center;
       transition: all 500ms ease-in-out;
     }
-    padding-right: 20px;
+    // padding-right: 20px;
     @include flexbox();
     .projectNumbers {
       width: 40vw;
       text-align: right;
       @media screen and #{$brk-medium} {
         text-align: left;
+      }
+      @media screen and #{$brk-small} {
+        text-align: center;
       }
       h1 {
         font-size: 70px;
@@ -140,12 +163,15 @@
       }
     }
     .projectMedia {
-      padding-left: 20px;
+      max-width: 100%;
+      // padding-left: 20px;
       .projectImage {
         margin-right: 20%;
         background-size: cover;
+        background-position: center;
         height: 300px;
         width: 400px;
+        max-width: 100% !important;
       }
       #image1 {
         background-image: url("#{$path-img}/songlabRedesign.png");
@@ -226,6 +252,7 @@
   overflow: scroll;
   @media screen and #{$brk-small} {
     width: 100%;
+    height: 15vh;
   }
   .aboutTaylor {
     width: 52%;
@@ -254,7 +281,7 @@
   transition: all 1s ease-in-out;
   @media screen and #{$brk-small} {
     width: 100% !important;
-    height: 80vh;
+    height: 70vh;
   }
 }
 
@@ -263,7 +290,7 @@
   transition: all 1s ease-in-out;
   @media screen and #{$brk-small} {
     width: 100% !important;
-    height: 10vh;
+    height: 15vh;
   }
   h1 {
     color: transparent;
@@ -325,16 +352,6 @@
 
 .processWrapper {
   @include flexbox($direction: column, $justify: space-between);
-  // .detailItem {
-  //   text-align: center;
-  //   @include flexbox($direction: column, $justify: space-between, $align: center);
-  //   width: 90%;
-  //   .processImg {
-  //     width: 100%;
-  //     height: 200px;
-  //     border: 1px solid $gold;
-  //   }
-  // }
 }
 
 .processItem {

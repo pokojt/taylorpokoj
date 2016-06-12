@@ -333,6 +333,7 @@ var clickWork = function() {
     $(".aboutTaylor").addClass("hidden");
     $(".contactInfo").addClass("hidden");
     $(".twoHeader").hide();
+    $(".contactLastName").addClass("hidden");
   });
 }
 var clickAbout = function() {
@@ -348,12 +349,14 @@ var clickAbout = function() {
     $(".logo").removeClass("logoMoved2");
     $(".aboutTaylor").removeClass("hidden");
     $(".contactInfo").addClass("hidden");
+    $(".contactLastName").addClass("hidden");
   });
 }
 var clickContact = function() {
   $('#contact').click(function() {
     $(".spaceThree").removeClass("clicked");
     $(".spaceTwo").removeClass("clicked");
+    $(".contactLastName").removeClass("hidden");
     $(".spaceOne").removeClass("notClicked");
     $(".spaceOne").addClass("clicked");
     $(".contactInfo").removeClass("hidden");
@@ -376,6 +379,7 @@ var clickLogo = function() {
     $(".projects").addClass("hidden");
     $(".aboutTaylor").addClass("hidden");
     $(".contactInfo").addClass("hidden");
+    $(".contactLastName").addClass("hidden");
     $(".twoHeader").show();
   });
 }
